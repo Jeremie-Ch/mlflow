@@ -38,6 +38,7 @@ On the main page, you'll find the list of runs for each experiment along with th
 ![click_on_metric](/images/click_on_metric.PNG) ![plot_chart](/images/plot_chart.PNG)
 
 ## Create an experiment
+MLflow is organized in experiments. One experiment can contain as many runs as needed but one run is associated with only one experiment. <br>
 Finally, you can create a new experiment from your python code, by using <code>mlflow.create_experiment(name)</code>. But for more convenience, a python script has been made
 for this purpose. From the terminal, go to the folder containing **create-experiment.py** and enter the command **python create-experiment [name]**. <br><br>
 Here I entered **python create-experiment my-new-experiment**. It is immediately visible from the UI. <br><br> ![ui_new_exp](/images/ui_new_experiment.PNG) <br><br>
