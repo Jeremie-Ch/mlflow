@@ -11,7 +11,7 @@ import mlflow.sklearn
 mlflow.set_tracking_uri("http://10.3.15.100:8080")
 
 """Experiment that you are working on"""
-exp_id = "0"
+exp_id = "5"
 
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
@@ -32,6 +32,7 @@ if __name__ == '__main__':
     n_estimators = int(sys.argv[1]) if len(sys.argv) > 1 else 100
 
     with mlflow.start_run(experiment_id=exp_id, run_name="run_name", description="Run description") as run:
+        mlflow.set_tag("run_id", run.info.run_id)
         """ Write the model here """
         rf = RandomForestRegressor(n_estimators)
         rf.fit(train_x, train_y)
