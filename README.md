@@ -22,8 +22,7 @@ More details [here](https://www.mlflow.org/docs/latest/python_api/mlflow.html#ml
 More details [here](https://www.mlflow.org/docs/latest/python_api/mlflow.html#mlflow.log_artifact).
 Artifacts can be viewed by clicking on the run's name on MLFlow server. They also can be retrieved directly from Minio where they are stored.
 - Log models using <code>log_model(model, artifact_path)</code> function. The function depends on the model you are using. For example, if your model is from scikit-learn, 
-you would use <code>mlflow.sklearn.log_model()</code>, if it is from keras, then use <code>mlflow.keras.log_model()</code> and so on. Note that <code>artifact_path</code> is optional and if spefified, 
-it will also save the model as an artifact. You will details on <code>mlflow.sklearn.log_model()</code> [here](https://www.mlflow.org/docs/latest/python_api/mlflow.sklearn.html#mlflow.sklearn.log_model). 
+you would use <code>mlflow.sklearn.log_model()</code>, if it is from keras, then use <code>mlflow.keras.log_model()</code> and so on. The model will then be saved as an artifact. You will details on <code>mlflow.sklearn.log_model()</code> [here](https://www.mlflow.org/docs/latest/python_api/mlflow.sklearn.html#mlflow.sklearn.log_model). 
 
 
 ## MLFlow UI
