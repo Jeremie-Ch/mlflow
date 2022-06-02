@@ -28,18 +28,18 @@ you would use <code>mlflow.sklearn.log_model()</code>, if it is from keras, then
 ## MLFlow UI
 After running your python script, logs are saved on the server and you can view them on **http://10.3.15.100:8080**. <br><br>
 On the main page, you'll find the list of runs for each experiment along with their metrics and parameters. The experiment selected here is named **Default**. <br><br>
-![mlflow ui](/images/mlflow_ui.PNG)
+![mlflow ui](/assets/images/mlflow_ui.PNG)
 
 - If you click on the run's name, you'll access to its details, including artifacts. <br><br>
-![details1](/images/run_details1.PNG) ![details2](/images/run_details2.PNG) <br><br>
+![details1](/assets/images/run_details1.PNG) ![details2](/assets/images/run_details2.PNG) <br><br>
 
 - You can also plot metrics by clicking on it. <br><br>
-![click_on_metric](/images/click_on_metric.PNG) ![plot_chart](/images/plot_chart.PNG)
+![click_on_metric](/assets/images/click_on_metric.PNG) ![plot_chart](/assets/images/plot_chart.PNG)
 
 ## Create an experiment
 MLflow is organized in experiments. One experiment can contain as many runs as needed but one run is associated with only one experiment. <br><br>
 You can create a new experiment from your python code, by using <code>mlflow.create_experiment(name)</code>. But for more convenience, a python script has been made
 for this purpose. From the terminal, go to the folder containing **create-experiment.py** and enter the command **python create-experiment [name]**. <br><br>
-Here I entered **python create-experiment my-new-experiment**. It is immediately visible from the UI. <br><br> ![ui_new_exp](/images/ui_new_experiment.PNG) <br><br>
+Here I entered **python create-experiment my-new-experiment**. It is immediately visible from the UI. <br><br> ![ui_new_exp](/assets/images/ui_new_experiment.PNG) <br><br>
 
 Experiments can also be created from MLFLow UI by clicking on the top-left **+** button.
